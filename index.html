@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Snake Game</h1>
+        <canvas id="game-board" width="400" height="400"></canvas>
+        <div id="score">Score: 0</div>
+        <div id="controls">
+            <button id="start-btn">Start Game</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <!-- Mobile touch controls -->
+        <div id="mobile-controls">
+            <div class="control-row">
+                <div class="control-btn" id="up-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="control-row">
+                <div class="control-btn" id="left-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41,16.59L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.59Z" />
+                    </svg>
+                </div>
+                <div class="control-btn" id="down-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z" />
+                    </svg>
+                </div>
+                <div class="control-btn" id="right-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M8.59,16.59L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.59Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-over">
+        <h2>Game Over!</h2>
+        <p id="final-score">Your score: 0</p>
+        <button id="restart-btn">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
